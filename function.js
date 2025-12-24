@@ -67,3 +67,18 @@ function hello (value){
 hello(function(){
     console.log("Hi")
 })
+
+
+// Closure
+
+function outer(){
+    let countNum = 0;
+    return function(){
+        countNum++;
+        console.log(countNum);
+    }
+}
+
+const bare = outer();
+bare();
+bare();
