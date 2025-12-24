@@ -56,3 +56,14 @@ function checkAge(age){
 // console.log(checkAge(19));
 let aged = checkAge(16);
 console.log(aged);
+
+
+// Pass a function into another function and execute it
+
+function hello (value){
+    value();
+}
+
+hello(function(){
+    console.log("Hi")
+})
