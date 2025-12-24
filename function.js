@@ -25,3 +25,10 @@ function bcad(){
     cbad();
 }
 bcad();
+
+
+// IIFE
+
+(function(){
+    console.log(333);
+})()
