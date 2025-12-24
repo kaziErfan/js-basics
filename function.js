@@ -45,3 +45,14 @@ function getScore (...scores){
     return total;
 }
 console.log(getScore(12, 14, 15, 16));
+
+
+// Check age using early return value
+
+function checkAge(age){
+    if (age < 18) return "Too Young";
+    return "Allowed"
+}
+// console.log(checkAge(19));
+let aged = checkAge(16);
+console.log(aged);
