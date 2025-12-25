@@ -82,3 +82,20 @@ function outer(){
 const bare = outer();
 bare();
 bare();
+
+
+// Price discount function using Higher Order Function
+
+function discountCalculator(discount){
+    return function(price){
+        return price - price * (discount / 100);
+    }
+}
+
+let discounter = discountCalculator(50);
+let ten = discountCalculator(10);
+let twenty = discountCalculator(20);
+
+console.log(discounter(1200));
+console.log(ten(1200));
+console.log(twenty(1200));
