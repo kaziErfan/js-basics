@@ -120,3 +120,11 @@ console.log(e());
 console.log(e());
 
 console.log(d());
+
+
+// IIFE Example 
+(function(){
+    const password = "secret password";
+    console.log(password);
+})();
+
