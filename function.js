@@ -99,3 +99,24 @@ let twenty = discountCalculator(20);
 console.log(discounter(1200));
 console.log(ten(1200));
 console.log(twenty(1200));
+
+
+// Closure Example
+function ben10(){
+    let ab = 0;
+    return function(){
+        ab++;
+        return ab;
+    };
+}
+
+let d = ben10();
+console.log(d());
+console.log(d());
+console.log(d());
+
+let e = ben10();
+console.log(e());
+console.log(e());
+
+console.log(d());
