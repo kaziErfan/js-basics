@@ -29,3 +29,13 @@ let newFil = filNum.filter(function(x){
 });
 
 console.log(newFil);
+
+
+// use .reduce() to find the sum of this array
+let sumOf = [ 10, 20, 30];
+
+let resultOf = sumOf.reduce(function(acc, value){
+    return acc + value;
+}, 0);
+
+console.log(resultOf);
