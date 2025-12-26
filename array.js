@@ -72,3 +72,11 @@ let fullName = ["Kevin", "Mask"];
 let [firstName, lastName] = fullName;
 console.log(firstName);
 console.log(lastName);
+
+
+// Merge two array using spread operator
+let b = [1, 2];
+let c = [3, 4];
+
+let bc = [...b, ...c];
+console.log(bc);
