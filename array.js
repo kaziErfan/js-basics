@@ -39,3 +39,15 @@ let resultOf = sumOf.reduce(function(acc, value){
 }, 0);
 
 console.log(resultOf);
+
+
+// use .find() to get the first number less than 10 in an array
+
+let findNum = [12, 14, 15, 3, 5, 4, 12, 10, 17];
+let newNum = findNum.find(function(y){
+    return y < 10;
+});
+
+console.log(newNum);
+
+
