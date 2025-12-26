@@ -128,3 +128,7 @@ console.log(d());
     console.log(password);
 })();
 
+
+greet();
+const greet = ()=>{};
+
