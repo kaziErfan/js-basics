@@ -65,3 +65,10 @@ let checkEven = evenNumber.every((a) => {
     return a % 2 === 0;
 });
 console.log(checkEven);
+
+
+// Destructure this array to get firstName & lastName
+let fullName = ["Kevin", "Mask"];
+let [firstName, lastName] = fullName;
+console.log(firstName);
+console.log(lastName);
