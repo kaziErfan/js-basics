@@ -11,3 +11,12 @@ let numResult = numSquare.map(function(val){
 });
 
 console.log(numResult);
+
+// Using reduce to square each number of an array
+let arr = [3, 5, 6];
+let ans = arr.reduce((accumulator, vale) => {
+    accumulator.push(vale ** 2);
+    return accumulator;
+}, []);
+ 
+console.log(ans);
