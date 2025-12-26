@@ -17,7 +17,7 @@ let arr = [3, 5, 6];
 let ans = arr.reduce((accumulator, vale) => {
     accumulator.push(vale ** 2);
     return accumulator;
-}, []);
+},[]);
  
 console.log(ans);
 
@@ -42,7 +42,6 @@ console.log(resultOf);
 
 
 // use .find() to get the first number less than 10 in an array
-
 let findNum = [12, 14, 15, 3, 5, 4, 12, 10, 17];
 let newNum = findNum.find(function(y){
     return y < 10;
@@ -52,10 +51,17 @@ console.log(newNum);
 
 
 // use .some() to check if any student has scored below 35
-
 let marks = [33, 45, 68, 70, 77, 20, 25, 85, 95, 82, 90];
 let checkMarks = marks.some((mark) => {
     return mark < 35;
 }, );
 
 console.log(checkMarks);
+
+
+// use .every() to check if all numbers are even
+let evenNumber = [2, 4, 6, 8, 10];
+let checkEven = evenNumber.every((a) => {
+    return a % 2 === 0;
+});
+console.log(checkEven);
