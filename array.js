@@ -20,3 +20,12 @@ let ans = arr.reduce((accumulator, vale) => {
 }, []);
  
 console.log(ans);
+
+
+// Use .filter() to keep numbers greater than 10
+let filNum = [5, 7, 8, 9, 10, 13, 15, 14, 12, 20];
+let newFil = filNum.filter(function(x){
+    return x > 10;
+});
+
+console.log(newFil);
