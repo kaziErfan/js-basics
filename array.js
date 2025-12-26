@@ -51,3 +51,11 @@ let newNum = findNum.find(function(y){
 console.log(newNum);
 
 
+// use .some() to check if any student has scored below 35
+
+let marks = [33, 45, 68, 70, 77, 20, 25, 85, 95, 82, 90];
+let checkMarks = marks.some((mark) => {
+    return mark < 35;
+}, );
+
+console.log(checkMarks);
