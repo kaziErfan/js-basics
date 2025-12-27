@@ -61,3 +61,10 @@ let collect = {
     [role]: "Erfan",
 };
 console.log(collect);
+  
+// Given a dynamic value. let key = "age". How will we access user[key]?
+let key = "age";
+const user = {
+    age: 26,
+};
+console.log(user[key]);
