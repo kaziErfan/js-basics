@@ -47,3 +47,17 @@ console.log(information2);
 
 // Optional Chaining
 console.log(information?.adresses?.city);
+
+// Computer Properties
+let role = "admin";
+
+let collect = {
+    name: "Erfan",
+    age: 26,
+    email: "erfan8@gmail.com",
+    address:{
+        city: "Chattogram",
+    },
+    [role]: "Erfan",
+};
+console.log(collect);
