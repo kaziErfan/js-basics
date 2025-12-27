@@ -81,7 +81,8 @@ let c = [3, 4];
 let bc = [...b, ...c];
 console.log(bc);
 
-// add Bangladesh to the start of this array using spread
+// add a country to the start of this array using spread
 let countries = ["USA", "UK"];
 let addCountries = ["Bangladesh", ...countries];
 console.log(addCountries);
+
