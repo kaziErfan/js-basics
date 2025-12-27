@@ -26,3 +26,7 @@ console.log(info);
 let info2 = {...info};
 console.log(info2);
 
+// Alternative to spread operator - Object.assign
+let info3 = Object.assign({}, info);
+console.log(info3);
+
