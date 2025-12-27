@@ -12,3 +12,17 @@ for(let key in obj){
 
 console.log(Object.keys(obj));
 console.log(Object.entries(obj));
+
+
+// Copying Object using spread operator
+let info = {
+    name: "Erfan",
+    age: 27,
+    email: "erfan@gmail.com",
+};
+
+console.log(info);
+
+let info2 = {...info};
+console.log(info2);
+
