@@ -27,6 +27,23 @@ let info2 = {...info};
 console.log(info2);
 
 // Alternative to spread operator - Object.assign
-let info3 = Object.assign({}, info);
+let info3 = Object.assign({price:Infinity}, info); //It can also add an property to the info object
 console.log(info3);
 
+
+// Deep Cloning
+let information = {
+    name: "Erfan",
+    age: 26,
+    email: "erfan@gmail.com",
+    address: {
+        city: "Chattogram",
+    },
+};
+
+let information2 = JSON.parse(JSON.stringify(information));
+console.log(information2);
+
+
+// Optional Chaining
+console.log(information?.adresses?.city);
