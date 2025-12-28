@@ -71,7 +71,6 @@ console.log(user[key]);
 
 
 // From the object below, print the latitude
-
 const locations = {
     city: "Chittagong",
     coordinates : {
@@ -90,3 +89,20 @@ console.log(locations?.coordinatess?.lat)
 let {city} = locations;
 let {lat} = locations.coordinates;
 console.log(city, lat);
+
+// Destructure the key "first-name" as a variable called firstName
+let userName = {
+    "first-name": "Erfan",
+};
+let{"first-name": firstName} = userName;
+console.log(firstName); 
+
+// Use for-in loop to log all keys in this object
+const course = {
+    title: "Javascript",
+    duration: "4 weeks",
+};
+
+for (let key in course){
+    console.log(key);
+};
