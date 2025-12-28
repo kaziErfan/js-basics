@@ -75,9 +75,18 @@ console.log(user[key]);
 const locations = {
     city: "Chittagong",
     coordinates : {
-        lat: 23.2,
+        lat: 24.2,
         lng: 77.4,
     },
 };
 
 console.log(locations.coordinates.lat);
+
+// What will happen if coordinates is missing? How can you prevent errors?
+// Ans: Using Optional Chaining
+console.log(locations?.coordinatess?.lat)
+
+// Destructure the city and latitude from the location object above
+let {city} = locations;
+let {lat} = locations.coordinates;
+console.log(city, lat);
