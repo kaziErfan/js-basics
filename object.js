@@ -114,3 +114,9 @@ for (let key in course){
 Object.entries(course).forEach(function(val){
     console.log(val[0] + ":" + val[1]);
 });
+
+// Copy this object using spread operator
+const original = {a: 1, b: 2};
+let copy = {...original};
+console.log(copy);
+
