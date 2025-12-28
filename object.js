@@ -120,3 +120,11 @@ const original = {a: 1, b: 2};
 let copy = {...original};
 console.log(copy);
 
+//Deep clone the object
+const obj1 = {info: {score: 80} };
+let newObj = JSON.parse(JSON.stringify(obj1));
+
+newObj.info.score = 100;
+console.log(newObj);
+console.log(obj1);
+
