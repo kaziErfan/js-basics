@@ -48,7 +48,7 @@ console.log(information2);
 // Optional Chaining
 console.log(information?.adresses?.city);
 
-// Computer Properties
+// Computer Properties 
 let role = "admin";
 
 let collect = {
@@ -127,4 +127,6 @@ let newObj = JSON.parse(JSON.stringify(obj1));
 newObj.info.score = 100;
 console.log(newObj);
 console.log(obj1);
+
+
 
